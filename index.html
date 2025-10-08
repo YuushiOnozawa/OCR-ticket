@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OCR連番管理システム</title>
+  <link rel="stylesheet" href="/src/scss/style.scss">
+</head>
+<body>
+  <div id="app">
+    <h1>OCR連番管理システム</h1>
+
+    <div class="controls">
+      <input type="date" id="date-input">
+      <input type="text" id="store-name-input" placeholder="店名">
+    </div>
+
+    <div class="camera-container">
+      <video id="camera-preview" autoplay playsinline></video>
+    </div>
+
+    <div class="output-container">
+      <label for="output-textarea">読み取り結果:</label>
+      <textarea id="output-textarea" readonly></textarea>
+    </div>
+
+  </div>
+  <script type="module" src="/src/ts/main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+# Git
+.git
+.gitignore
+
+# Node
+node_modules
+npm-debug.log
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Editor
+.vscode
+.idea
