@@ -5,10 +5,10 @@ updates:
     schedule:
       interval: "daily"
     groups:
-      security-updates:
-        applies-to: security-updates
-        patterns: ["*"]
       dependency-updates:
         applies-to: version-updates
+        patterns: ["*"]
+      security-updates:
+        applies-to: security-updates
         patterns: ["*"]
     open-pull-requests-limit: 5
