@@ -59,3 +59,9 @@ iPhoneやWebカメラで撮影した画像から券番号をリアルタイム�
 - **ブランチ戦略**: `main`ブランチから作業ブランチを作成し、開発完了後にプルリクエストを送信してください。
 
 詳細は `docs/specifications.md` および `AGENTS.md` を参照してください。
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
