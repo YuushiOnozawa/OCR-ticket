@@ -142,4 +142,4 @@ vite.config.ts.timestamp-*
 .gitconfig
 
 # gemini settings
-.gemini/
+.gemini/settings.json
