@@ -8,4 +8,7 @@ updates:
       security-updates:
         applies-to: security-updates
         patterns: ["*"]
+      dependency-updates:
+        applies-to: version-updates
+        patterns: ["*"]
     open-pull-requests-limit: 5
