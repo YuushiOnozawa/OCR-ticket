@@ -18,6 +18,9 @@
 
 
 -   **規約**: [**Conventional Commits**](https://www.conventionalcommits.org/ja/v1.0.0/) 仕様に厳密に従ってください。
+-   **言語**:
+    -   **タイトル (`<type>: <description>`)**: `<type>`は英語、`<description>`（要約）は日本語で記述します。
+    -   **本文 (`[optional body]`)**: 必要に応じて、詳細を日本語で記述します。
 -   **フォーマット**:
     ```
     <type>[optional scope]: <description>
