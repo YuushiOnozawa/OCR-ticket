@@ -142,4 +142,6 @@ vite.config.ts.timestamp-*
 .gitconfig
 
 # gemini settings
-.gemini/settings.json
+.gemini/
+!.gemini/config.yaml
+!.gemini/styleguide.md
