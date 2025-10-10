@@ -15,11 +15,8 @@
 		"test": "vitest",
 		"prepare": "npx simple-git-hooks"
 	},
-	"lint-staged": {
-		"**/*.{js,ts,jsx,tsx,json,md}": "npx @biomejs/biome check --write"
-	},
 	"simple-git-hooks": {
-		"pre-commit": "npx lint-staged",
+		"pre-commit": "npx @biomejs/biome check --staged --write",
 		"commit-msg": "npx commitlint --edit $1"
 	},
 	"repository": {
@@ -38,7 +35,6 @@
 		"@commitlint/cli": "^20.1.0",
 		"@commitlint/config-conventional": "^20.0.0",
 		"jsdom": "^27.0.0",
-		"lint-staged": "^16.2.3",
 		"sass": "^1.93.2",
 		"simple-git-hooks": "^2.13.1",
 		"typescript": "^5.9.3",
