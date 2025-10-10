@@ -143,3 +143,5 @@ vite.config.ts.timestamp-*
 
 # gemini settings
 .gemini/
+!.gemini/config.yaml
+!.gemini/styleguide.md

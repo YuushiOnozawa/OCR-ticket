@@ -1,44 +1,44 @@
 {
-  "name": "ocr",
-  "version": "1.0.0",
-  "description": "iPhoneやWebカメラで撮影した画像から券番号をリアルタイムに抽出し、管理するためのブラウザベースのアプリケーションです。",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "format": "npx @biomejs/biome format --write .",
-    "lint": "npx @biomejs/biome check --apply .",
-    "test": "vitest",
-    "prepare": "npx simple-git-hooks"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "npm run lint",
-    "commit-msg": "npx commitlint --edit $1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/YO-labs/get-ticketno-fromOCR.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/YO-labs/get-ticketno-fromOCR/issues"
-  },
-  "homepage": "https://github.com/YO-labs/get-ticketno-fromOCR#readme",
-  "devDependencies": {
-    "@biomejs/biome": "^2.2.5",
-    "@commitlint/cli": "^20.1.0",
-    "@commitlint/config-conventional": "^20.0.0",
-    "jsdom": "^27.0.0",
-    "sass": "^1.93.2",
-    "simple-git-hooks": "^2.13.1",
-    "typescript": "^5.9.3",
-    "vite": "^7.1.9",
-    "vitest": "^3.2.4"
-  }
+	"name": "ocr",
+	"version": "1.0.0",
+	"description": "iPhoneやWebカメラで撮影した画像から券番号をリアルタイムに抽出し、管理するためのブラウザベースのアプリケーションです。",
+	"main": "index.js",
+	"directories": {
+		"doc": "docs"
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"format": "npx @biomejs/biome format --write .",
+		"lint": "npx @biomejs/biome check --write .",
+		"test": "vitest",
+		"prepare": "npx simple-git-hooks"
+	},
+	"simple-git-hooks": {
+		"pre-commit": "npx @biomejs/biome check --staged --write",
+		"commit-msg": "npx commitlint --edit $1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/YuushiOnozawa/OCR-ticket.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/YuushiOnozawa/OCR-ticket/issues"
+	},
+	"homepage": "https://github.com/YuushiOnozawa/OCR-ticket#readme",
+	"devDependencies": {
+		"@biomejs/biome": "^2.2.5",
+		"@commitlint/cli": "^20.1.0",
+		"@commitlint/config-conventional": "^20.0.0",
+		"jsdom": "^27.0.0",
+		"sass": "^1.93.2",
+		"simple-git-hooks": "^2.13.1",
+		"typescript": "^5.9.3",
+		"vite": "^7.1.9",
+		"vitest": "^3.2.4"
+	}
 }
